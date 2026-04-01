@@ -6,23 +6,17 @@
   <title>MD Ariful Islam | Adam</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-
-      /* BACKGROUND IMAGE */
       background:
         linear-gradient(rgba(244,247,251,0.92), rgba(244,247,251,0.92)),
         url("background.jpg");
-
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-
       color: #1f2937;
       line-height: 1.7;
     }
@@ -55,11 +49,6 @@
       text-decoration: none;
       color: #1f4e79;
       font-weight: bold;
-      font-size: 1rem;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
     }
 
     .hero {
@@ -76,13 +65,7 @@
       height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #ffffff;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
-    }
-
-    .hero-text {
-      flex: 1;
-      min-width: 260px;
+      border: 4px solid #fff;
     }
 
     .hero-text h1 {
@@ -99,31 +82,37 @@
 
     .hero-tagline {
       margin-top: 14px;
-      font-size: 1.08rem;
       color: #486581;
-      max-width: 700px;
     }
 
     .button-row {
       margin-top: 18px;
       display: flex;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
     .button-row a {
-      display: inline-block;
-      padding: 10px 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
       background: #1f4e79;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.2s ease;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: 0.2s;
     }
 
     .button-row a:hover {
       background: #163a5c;
+    }
+
+    .button-row svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
     }
 
     .section {
@@ -131,31 +120,6 @@
       margin-top: 26px;
       padding: 28px;
       border-radius: 14px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    .section h2 {
-      margin-top: 0;
-      margin-bottom: 16px;
-      font-size: 2rem;
-      color: #1f4e79;
-    }
-
-    .section p {
-      margin-bottom: 16px;
-      font-size: 1.08rem;
-    }
-
-    .read-more {
-      display: inline-block;
-      margin-top: 6px;
-      color: #1f4e79;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .read-more:hover {
-      text-decoration: underline;
     }
 
     .highlight {
@@ -165,140 +129,76 @@
 
     footer {
       margin-top: 40px;
-      padding-top: 24px;
-      border-top: 1px solid #d9e2ec;
       text-align: center;
       color: #6b7280;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 700px) {
-      .hero {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .hero img {
-        width: 130px;
-        height: 130px;
-      }
-
-      .hero-text h1 {
-        font-size: 2.2rem;
-      }
-
-      .section h2 {
-        font-size: 1.7rem;
-      }
     }
   </style>
 </head>
 
 <body>
 
-  <nav>
-    <div class="nav-inner">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="photography.html">Photography</a>
-      <a href="social.html">Social Work</a>
-    </div>
-  </nav>
-
-  <div class="container">
-
-    <header class="hero">
-      <img src="profile.jpg" alt="Profile photo of MD Ariful Islam">
-
-      <div class="hero-text">
-        <h1>MD Ariful Islam</h1>
-        <p>Preferred name: Adam</p>
-        <p>PhD Candidate, Department of Physics and Astronomy</p>
-        <p>Binghamton University, SUNY</p>
-        <p>Originally from Meherpur, Bangladesh</p>
-
-        <p class="hero-tagline">
-          I study <span class="highlight">2D magnetic materials</span> and work under the supervision of 
-          <span class="highlight">Prof. Zhong Lin</span>.
-        </p>
-
-        <div class="button-row">
-          <a href="mailto:arif291006@email.com">Email</a>
-          <a href="https://github.com/AdamArif008" target="_blank">GitHub</a>
-          <a href="https://scholar.google.com/citations?user=wEflClIAAAAJ" target="_blank">Google Scholar</a>
-          <a href="https://orcid.org/0000-0002-9539-7121" target="_blank">ORCID</a>
-          <a href="https://www.linkedin.com/in/the-ariful-islam/" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-    </header>
-
-    <section class="section">
-      <h2>About Me</h2>
-
-      <p>
-        I am a PhD candidate in the Department of Physics and Astronomy at 
-        Binghamton University, SUNY, working under the supervision of 
-        <span class="highlight">Prof. Zhong Lin</span>.
-      </p>
-
-      <p>
-        My research focuses on <span class="highlight">2D magnetic materials</span>, 
-        an exciting area of condensed matter physics with strong potential 
-        applications in spintronics and next-generation electronic technologies.
-      </p>
-
-      <p>
-        I am originally from Meherpur, Bangladesh. I am passionate about using 
-        my knowledge and position to contribute meaningfully to both science 
-        and society.
-      </p>
-
-      <p>
-        Outside of research, I enjoy photography, especially 
-        <span class="highlight">nature photography</span>.
-      </p>
-
-    </section>
-
-    <section class="section">
-      <h2>Research</h2>
-      <p>
-        My work explores the properties and applications of two-dimensional magnetic materials,
-        with a focus on synthesis, characterization, and device-relevant properties.
-      </p>
-
-      <a class="read-more" href="research.html">Read more →</a>
-    </section>
-
-    <section class="section">
-      <h2>Social Commitment</h2>
-      <p>
-        I am deeply committed to helping poor and elderly people in Meherpur, Bangladesh who struggle to
-        afford basic necessities such as food, clothing, and medicine.
-      </p>
-
-      <p>
-        I also support <span class="highlight">education for underprivileged children</span>.
-      </p>
-
-      <a class="read-more" href="social.html">Read more →</a>
-    </section>
-
-    <section class="section">
-      <h2>Photography</h2>
-      <p>
-        Photography is one of my personal interests outside academia. I especially enjoy photographing
-        nature and landscapes.
-      </p>
-
-      <a class="read-more" href="photography.html">Read more →</a>
-    </section>
-
-    <footer>
-      <p>© MD Ariful Islam | Binghamton University, SUNY</p>
-    </footer>
-
+<nav>
+  <div class="nav-inner">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="photography.html">Photography</a>
+    <a href="social.html">Social Work</a>
   </div>
+</nav>
+
+<div class="container">
+
+<header class="hero">
+  <img src="profile.jpg">
+
+  <div class="hero-text">
+    <h1>MD Ariful Islam</h1>
+    <p>Preferred name: Adam</p>
+
+    <p>PhD Candidate in Physics</p>
+    <p>Department of Physics, Applied Physics and Astronomy</p>
+    <p>Binghamton University (SUNY), USA</p>
+
+    <p>Originally from Meherpur, Bangladesh</p>
+
+    <p class="hero-tagline">
+      I study <span class="highlight">2D magnetic materials</span> under Prof. Zhong Lin.
+    </p>
+
+    <div class="button-row">
+
+      <a href="mailto:mislam88@binghamton.edu">Academic</a>
+      <a href="mailto:arif291006@gmail.com">Gmail</a>
+
+      <a href="https://scholar.google.com/citations?user=wEflClIAAAAJ" target="_blank">Scholar</a>
+      <a href="https://www.researchgate.net/profile/Md-Ariful-Islam-70" target="_blank">ResearchGate</a>
+      <a href="https://orcid.org/0000-0002-9539-7121" target="_blank">ORCID</a>
+      <a href="https://www.linkedin.com/in/the-ariful-islam/" target="_blank">LinkedIn</a>
+      <a href="https://www.youtube.com/@AdamArif008" target="_blank">YouTube</a>
+      <a href="https://github.com/AdamArif008" target="_blank">GitHub</a>
+
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <h2>About Me</h2>
+
+  <p>
+    I am a PhD candidate in Physics at Binghamton University (SUNY), working in the Department of Physics, Applied Physics and Astronomy. My research focuses on two-dimensional magnetic materials, with an emphasis on antiferromagnetism and spintronic phenomena. I work under the supervision of Prof. Zhong Lin.
+  </p>
+
+  <p>
+    I am originally from Meherpur, Bangladesh, and I am passionate about contributing to both scientific research and society.
+  </p>
+
+</section>
+
+<footer>
+  <p>© MD Ariful Islam | Binghamton University</p>
+</footer>
+
+</div>
 
 </body>
 </html>
