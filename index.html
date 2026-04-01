@@ -13,7 +13,16 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f7fb;
+
+      /* BACKGROUND IMAGE */
+      background:
+        linear-gradient(rgba(244,247,251,0.92), rgba(244,247,251,0.92)),
+        url("background.jpg");
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+
       color: #1f2937;
       line-height: 1.7;
     }
@@ -25,11 +34,12 @@
     }
 
     nav {
-      background: #ffffff;
+      background: rgba(255,255,255,0.95);
       border-bottom: 1px solid #dbe3ec;
       position: sticky;
       top: 0;
       z-index: 100;
+      backdrop-filter: blur(6px);
     }
 
     .nav-inner {
@@ -117,7 +127,7 @@
     }
 
     .section {
-      background: #ffffff;
+      background: rgba(255,255,255,0.95);
       margin-top: 26px;
       padding: 28px;
       border-radius: 14px;
@@ -183,6 +193,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <nav>
@@ -195,6 +206,7 @@
   </nav>
 
   <div class="container">
+
     <header class="hero">
       <img src="profile.jpg" alt="Profile photo of MD Ariful Islam">
 
@@ -206,8 +218,8 @@
         <p>Originally from Meherpur, Bangladesh</p>
 
         <p class="hero-tagline">
-          I study <span class="highlight">2D magnetic materials</span> and care deeply about
-          using knowledge, compassion, and service to support vulnerable people in my community.
+          I study <span class="highlight">2D magnetic materials</span> and work under the supervision of 
+          <span class="highlight">Prof. Zhong Lin</span>.
         </p>
 
         <div class="button-row">
@@ -222,29 +234,37 @@
 
     <section class="section">
       <h2>About Me</h2>
+
       <p>
-        I am a PhD candidate in the Department of Physics and Astronomy at Binghamton University, SUNY.
-        My research focuses on <span class="highlight">2D magnetic materials</span>, an exciting area in modern
-        physics with potential applications in future electronic and spintronic technologies.
+        I am a PhD candidate in the Department of Physics and Astronomy at 
+        Binghamton University, SUNY, working under the supervision of 
+        <span class="highlight">Prof. Zhong Lin</span>.
       </p>
 
       <p>
-        I am originally from Meherpur, Bangladesh. I am passionate about using my knowledge and position
-        to contribute meaningfully to both science and society.
+        My research focuses on <span class="highlight">2D magnetic materials</span>, 
+        an exciting area of condensed matter physics with strong potential 
+        applications in spintronics and next-generation electronic technologies.
       </p>
 
       <p>
-        Outside of research, I enjoy photography, especially <span class="highlight">nature photography</span>.
-        I like capturing landscapes and natural environments that reflect the beauty of the world around us.
+        I am originally from Meherpur, Bangladesh. I am passionate about using 
+        my knowledge and position to contribute meaningfully to both science 
+        and society.
       </p>
+
+      <p>
+        Outside of research, I enjoy photography, especially 
+        <span class="highlight">nature photography</span>.
+      </p>
+
     </section>
 
     <section class="section">
       <h2>Research</h2>
       <p>
-        My work explores the properties and potential applications of two-dimensional magnetic materials.
-        I am interested in understanding how these materials can contribute to future advances in physics,
-        electronics, and spintronics.
+        My work explores the properties and applications of two-dimensional magnetic materials,
+        with a focus on synthesis, characterization, and device-relevant properties.
       </p>
 
       <a class="read-more" href="research.html">Read more →</a>
@@ -258,8 +278,7 @@
       </p>
 
       <p>
-        I also want to support <span class="highlight">education for underprivileged children</span>, because I
-        believe education can create dignity, opportunity, and long-term positive change.
+        I also support <span class="highlight">education for underprivileged children</span>.
       </p>
 
       <a class="read-more" href="social.html">Read more →</a>
@@ -269,7 +288,7 @@
       <h2>Photography</h2>
       <p>
         Photography is one of my personal interests outside academia. I especially enjoy photographing
-        nature and landscapes, and I hope to share more of that work over time.
+        nature and landscapes.
       </p>
 
       <a class="read-more" href="photography.html">Read more →</a>
@@ -278,10 +297,8 @@
     <footer>
       <p>© MD Ariful Islam | Binghamton University, SUNY</p>
     </footer>
-  </div>
 
-</body>
-</html>
+  </div>
 
 </body>
 </html>
